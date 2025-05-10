@@ -1,0 +1,239 @@
+/* style.css */
+
+/* You can add more global styles here if needed */
+
+/* Add transitions for smoother UI interactions */
+.btn, .form-control, .card, .nav-link {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Small animation for alerts */
+.alert {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Style scrollbars for better aesthetics (optional) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #bdbdbd;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+/* Money-related icon styling (example) */
+.fa-rupee-sign {
+    color: #28a745; /* Green color often associated with money */
+}
+
+/* Style for the password loading indicator placeholder */
+#password-loading.d-inline-block { /* When visible */
+    width: 16px;
+    height: 16px;
+    border-width: 2px;
+    vertical-align: text-bottom;
+}
+/* Customizing the container for better spacing */
+.container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Styling for the card */
+.card {
+    border-radius: 15px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 30px;
+}
+
+.card-body {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+}
+
+/* Buttons with hover effects */
+.btn-primary, .btn-outline-primary {
+    transition: all 0.3s ease;
+    border-radius: 50px;
+}
+
+.btn-primary:hover, .btn-outline-primary:hover {
+    background-color: #ff8a00;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Animating the text */
+h1, .lead {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling the image */
+img {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Adding subtle background animation */
+body {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container padding */
+.container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 15px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card body background */
+.card-body {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+}
+
+/* Header and paragraph */
+h1, .lead {
+    animation: fadeIn 2s ease-in-out;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effects on buttons */
+.btn-primary, .btn-outline-primary {
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-outline-primary:hover {
+    background-color: #ff8a00;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Fade In effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Image animation */
+img {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+/* Bouncing icon */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Animated background */
+body {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ff8a00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer .development-team {
+    margin-top: 10px;
+}
+
+footer .development-team a {
+    font-weight: bold;
+}
+
+footer .footer-logo {
+    margin-top: 20px;
+}
+
+/* Footer link hover effect */
+footer a:hover {
+    color: #ff8a00;
+    transform: scale(1.05);
+}
